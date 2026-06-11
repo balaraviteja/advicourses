@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SQL for Data Analytics Course</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background: linear-gradient(135deg,#020617,#0f172a);
+  color:#fff;
+}
+
+.section{padding:60px 8%;}
+
+.hero{
+  text-align:center;
+  padding:100px 20px;
+}
+
+.hero h1{
+  font-size:2.5rem;
+  background: linear-gradient(90deg,#38bdf8,#22c55e);
+  -webkit-background-clip:text;
+  color:transparent;
+}
+
+.hero p{
+  margin-top:10px;
+  opacity:0.8;
+  max-width:700px;
+  margin:auto;
+}
+
+.card{
+  background:rgba(255,255,255,0.05);
+  padding:25px;
+  border-radius:20px;
+  margin-top:20px;
+  backdrop-filter:blur(10px);
+}
+
+.old-price{
+  text-decoration:line-through;
+  color:#94a3b8;
+}
+
+.new-price{
+  font-size:2.3rem;
+  color:#22c55e;
+  font-weight:600;
+}
+
+.btn{
+  margin-top:20px;
+  padding:15px;
+  width:100%;
+  border:none;
+  border-radius:12px;
+  background:linear-gradient(135deg,#22c55e,#4ade80);
+  cursor:pointer;
+  font-weight:600;
+}
+.btn:hover{transform:scale(1.05);}
+
+/* ACCORDION */
+.accordion-item{
+  margin-top:10px;
+  border-radius:10px;
+  overflow:hidden;
+}
+
+.accordion-header{
+  width:100%;
+  background:linear-gradient(135deg,#38bdf8,#6366f1);
+  padding:15px;
+  border:none;
+  color:#fff;
+  text-align:left;
+  font-weight:600;
+  cursor:pointer;
+}
+
+.accordion-content{
+  display:none;
+  background:rgba(255,255,255,0.05);
+  padding:15px;
+}
+
+.accordion-content li{
+  margin-bottom:6px;
+}
+
+.terms{
+  font-size:0.85rem;
+  opacity:0.7;
+  margin-top:10px;
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+}
+</style>
+
+<script>
+function payNow(){
+  window.open("https://pages.razorpay.com/pl_SzCKilInwVO1Te/view","_blank");
+}
+</script>
+
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>SQL for Data Analytics 🚀</h1>
+  <p>
+    Master SQL from basics to advanced with real-time business scenarios, 
+    analytics use cases, and industry-level query optimization.
+  </p>
+</section>
+
+<!-- OVERVIEW -->
+<section class="section">
+  <h2>Course Overview</h2>
+
+  <div class="card">
+    <p>
+      This course is designed for <b>Data Analysts, Engineers, and Professionals</b> 
+      who want strong real-world SQL skills.  
+      Learn how to write production-level queries, analyze data, and solve business problems.
+    </p>
+  </div>
+
+  <div class="accordion">
+
+    <!-- FOUNDATIONS -->
+    <div class="accordion-item">
+      <button class="accordion-header">SQL Foundations ▼</button>
+      <div class="accordion-content">
+        <ul>
+          <li>SQL Installation & Setup</li>
+          <li>Database Concepts</li>
+          <li>DDL Commands (Real-time usage)</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- DATA HANDLING -->
+    <div class="accordion-item">
+      <button class="accordion-header">Table & Data Management ▼</button>
+      <div class="accordion-content">
+        <ul>
+          <li>ALTER Commands</li>
+          <li>Constraints in real systems</li>
+          <li>DELETE vs TRUNCATE</li>
+          <li>UPDATE best practices</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- BASICS -->
+    <div class="accordion-item">
+      <button class="accordion-header">Data Retrieval ▼</button>
+      <div class="accordion-content">
+        <ul>
+          <li>SELECT deep dive</li>
+          <li>WHERE filtering</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ADVANCED -->
+    <div class="accordion-item">
+      <button class="accordion-header">Aggregation & Joins ▼</button>
+      <div class="accordion-content">
+        <ul>
+          <li>GROUP BY & HAVING</li>
+          <li>All Joins (INNER, LEFT, RIGHT, FULL)</li>
+          <li>Real analytics scenarios</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- FUNCTIONS -->
+    <div class="accordion-item">
+      <button class="accordion-header">SQL Functions ▼</button>
+      <div class="accordion-content">
+        <ul>
+          <li>Date & String functions</li>
+          <li>CASE WHEN logic</li>
+          <li>Data cleaning techniques</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- WINDOW -->
+    <div class="accordion-item">
+      <button class="accordion-header">Window Functions ▼</button>
+      <div class="accordion-content">
+        <ul>
+          <li>RANK, ROW_NUMBER</li>
+          <li>LEAD & LAG</li>
+          <li>Advanced analytics queries</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ADVANCED -->
+    <div class="accordion-item">
+      <button class="accordion-header">Advanced SQL ▼</button>
+      <div class="accordion-content">
+        <ul>
+          <li>CTEs & Subqueries</li>
+          <li>Stored Procedures</li>
+          <li>EXISTS / NOT EXISTS</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- PERFORMANCE -->
+    <div class="accordion-item">
+      <button class="accordion-header">Performance Tuning ▼</button>
+      <div class="accordion-content">
+        <ul>
+          <li>Indexing strategies</li>
+          <li>Query optimization</li>
+          <li>Fix slow queries</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ANALYTICS -->
+    <div class="accordion-item">
+      <button class="accordion-header">Analytics & Tools ▼</button>
+      <div class="accordion-content">
+        <ul>
+          <li>SQL + Tableau integration</li>
+          <li>Analytics workflow</li>
+          <li>Career roadmap</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- PROJECT -->
+    <div class="accordion-item">
+      <button class="accordion-header">Real-Time Projects ▼</button>
+      <div class="accordion-content">
+        <ul>
+          <li>End-to-end case studies</li>
+          <li>Business problem solving</li>
+          <li>Hands-on datasets</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PRICE -->
+<section class="section">
+  <div class="card" style="text-align:center;">
+    <h2>SQL for Data Analytics Full Course</h2>
+    <h3>🔥 Limited Offer</h3>
+
+    <p class="old-price">₹2,000</p>
+    <p class="new-price">₹299</p>
+
+    <button class="btn" onclick="payNow()">Enroll Now</button>
+
+    <p class="terms">
+      ✅ Course access will be provided within 24 hours
+    </p>
+  </div>
+</section>
+
+<!-- TERMS -->
+<section class="section">
+  <h2>Terms & Conditions</h2>
+  <div class="card">
+    <ul>
+      <li>Access within 24 hours after payment</li>
+      <li>No refunds</li>
+      <li>Personal use only</li>
+      <li>Support via doubt sessions</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+© 2026 ADVI COURSES
+</footer>
+
+<script>
+document.querySelectorAll(".accordion-header").forEach(btn=>{
+  btn.addEventListener("click",()=>{
+    const content = btn.nextElementSibling;
+    content.style.display =
+      content.style.display === "block" ? "none" : "block";
+  });
+});
+</script>
+
+</body>
+</html>

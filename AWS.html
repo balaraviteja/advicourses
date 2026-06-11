@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DevOps with AWS Course</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{background: linear-gradient(135deg,#020617,#0f172a);color:#fff;}
+.section{padding:60px 8%;}
+.hero{text-align:center;padding:100px 20px;}
+.hero h1{
+  font-size:2.5rem;
+  background: linear-gradient(90deg,#f59e0b,#22c55e);
+  -webkit-background-clip:text;
+  color:transparent;
+}
+.hero p{opacity:0.8;margin-top:10px;}
+
+.card{
+  background:rgba(255,255,255,0.05);
+  padding:25px;
+  border-radius:20px;
+  margin-top:20px;
+}
+
+.old-price{text-decoration:line-through;color:#94a3b8;}
+.new-price{font-size:2.3rem;color:#22c55e;font-weight:600;}
+
+.btn{
+  margin-top:15px;
+  padding:15px;
+  width:100%;
+  border:none;
+  border-radius:10px;
+  background:linear-gradient(135deg,#22c55e,#4ade80);
+  cursor:pointer;
+  font-weight:600;
+}
+
+.accordion-item{margin-top:10px;}
+.accordion-header{
+  width:100%;
+  background:linear-gradient(135deg,#f59e0b,#6366f1);
+  padding:15px;
+  border:none;
+  color:#fff;
+  text-align:left;
+  cursor:pointer;
+  font-weight:600;
+}
+.accordion-content{
+  display:none;
+  background:rgba(255,255,255,0.05);
+  padding:15px;
+}
+.accordion-content ul{
+  padding-left:20px;
+}
+.accordion-content li{
+  margin-bottom:6px;
+}
+
+footer{text-align:center;padding:20px;}
+</style>
+
+<script>
+function payNow(){
+  window.open("https://pages.razorpay.com/pl_SzMDXsObDBFqOV/view","_blank");
+}
+</script>
+
+</head>
+
+<body>
+
+<section class="hero">
+  <h1>DevOps with AWS 🚀</h1>
+  <p>Complete real-time DevOps training with AWS, Docker, Kubernetes & CI/CD</p>
+</section>
+
+<section class="section">
+<h2>Course Curriculum</h2>
+
+<div class="accordion">
+
+<!-- SECTION 1 -->
+<div class="accordion-item">
+<button class="accordion-header">Section 1: Introduction to DevOps ▼</button>
+<div class="accordion-content">
+<ul>
+<li>What is DevOps?</li>
+<li>Why DevOps?</li>
+<li>DevOps Tools</li>
+<li>Differences between SDLC methodologies</li>
+<li>DevOps Life Cycle</li>
+<li>Waterfall Model</li>
+<li>Agile Model</li>
+<li>DevOps Model</li>
+<li>Overview on Sprints and Release</li>
+<li>Overview on Scrum</li>
+</ul>
+</div>
+</div>
+
+<!-- SECTION 2 -->
+<div class="accordion-item">
+<button class="accordion-header">Section 2: Introduction to Linux ▼</button>
+<div class="accordion-content">
+<ul>
+<li>Linux History</li>
+<li>File and Directory Commands</li>
+<li>File Permission Commands</li>
+<li>File Compression & Archiving</li>
+<li>Process Management</li>
+<li>System Information</li>
+<li>Networking Commands</li>
+<li>I/O Redirection</li>
+<li>Environment Variables</li>
+<li>User Management</li>
+<li>Shortcuts Commands</li>
+<li>Logging & Auditing</li>
+<li>Installing Packages</li>
+</ul>
+</div>
+</div>
+
+<!-- SECTION 3 -->
+<div class="accordion-item">
+<button class="accordion-header">Section 3: Version Control – GIT ▼</button>
+<div class="accordion-content">
+<ul>
+<li>Introduction to VCS</li>
+<li>Types of VCS</li>
+<li>CVCS vs DVCS</li>
+<li>Git Architecture</li>
+<li>Git Installation</li>
+<li>Git Commands: init, clone, add, commit, push, pull</li>
+<li>branch, merge, rebase, stash</li>
+<li>Working with GitHub</li>
+<li>Pull Requests</li>
+</ul>
+</div>
+</div>
+
+<!-- SECTION 4 -->
+<div class="accordion-item">
+<button class="accordion-header">Section 4: Maven ▼</button>
+<div class="accordion-content">
+<ul>
+<li>Introduction to Maven</li>
+<li>Maven lifecycle & plugins</li>
+<li>Validate, Compile, Test</li>
+<li>Package, Install, Deploy</li>
+</ul>
+</div>
+</div>
+
+<!-- SECTION 5 -->
+<div class="accordion-item">
+<button class="accordion-header">Section 5: Tomcat ▼</button>
+<div class="accordion-content">
+<ul>
+<li>Tomcat Installation</li>
+<li>XML configuration</li>
+<li>Deploying applications</li>
+</ul>
+</div>
+</div>
+
+<!-- SECTION 6 -->
+<div class="accordion-item">
+<button class="accordion-header">Section 6: Jenkins ▼</button>
+<div class="accordion-content">
+<ul>
+<li>Jenkins CI/CD concepts</li>
+<li>Job creation</li>
+<li>Pipeline creation</li>
+<li>SCM polling & webhooks</li>
+<li>Deployment to AWS EC2</li>
+</ul>
+</div>
+</div>
+
+<!-- SECTION 7 -->
+<div class="accordion-item">
+<button class="accordion-header">Section 7: Docker ▼</button>
+<div class="accordion-content">
+<ul>
+<li>Docker Architecture</li>
+<li>Containers vs VM</li>
+<li>Docker Images & Containers</li>
+<li>Dockerfile</li>
+<li>Volumes & Networking</li>
+<li>Docker Compose</li>
+<li>Push images to DockerHub & AWS ECR</li>
+</ul>
+</div>
+</div>
+
+<!-- SECTION 8 -->
+<div class="accordion-item">
+<button class="accordion-header">Section 8: Kubernetes ▼</button>
+<div class="accordion-content">
+<ul>
+<li>Kubernetes Architecture</li>
+<li>Pods, Deployments, Services</li>
+<li>Load balancer</li>
+<li>Helm</li>
+<li>Monitoring with Grafana</li>
+<li>Deploying apps on AWS EKS</li>
+</ul>
+</div>
+</div>
+
+<!-- SECTION 9 -->
+<div class="accordion-item">
+<button class="accordion-header">Section 9: Terraform ▼</button>
+<div class="accordion-content">
+<ul>
+<li>Infrastructure as Code</li>
+<li>Terraform setup</li>
+<li>EC2 automation</li>
+<li>State management</li>
+<li>Modules & variables</li>
+</ul>
+</div>
+</div>
+
+<!-- SECTION 10 -->
+<div class="accordion-item">
+<button class="accordion-header">Section 10: Ansible ▼</button>
+<div class="accordion-content">
+<ul>
+<li>Playbooks</li>
+<li>Roles</li>
+<li>Automation</li>
+<li>Deploy Docker using Ansible</li>
+</ul>
+</div>
+</div>
+
+<!-- SECTION 11 -->
+<div class="accordion-item">
+<button class="accordion-header">Section 11: Monitoring ▼</button>
+<div class="accordion-content">
+<ul>
+<li>Prometheus</li>
+<li>Grafana dashboards</li>
+<li>Kubernetes monitoring</li>
+</ul>
+</div>
+</div>
+
+<!-- SECTION 12 -->
+<div class="accordion-item">
+<button class="accordion-header">Section 12: DevOps on AWS ▼</button>
+<div class="accordion-content">
+<ul>
+<li>EC2, S3, Networking</li>
+<li>CodePipeline, CodeBuild</li>
+<li>ECS & EKS</li>
+<li>AWS DevOps services</li>
+</ul>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<div class="card" style="text-align:center;">
+<h2>DevOps with AWS Full Course</h2>
+<h3>🔥 Limited Offer</h3>
+
+<p class="old-price">₹15,000</p>
+<p class="new-price">₹799</p>
+
+<button class="btn" onclick="payNow()">Enroll Now</button>
+
+<p style="margin-top:10px;font-size:0.9rem;">
+✅ Course access within 24 hours
+</p>
+</div>
+</section>
+
+<footer>
+© 2026 ADVI COURSES
+</footer>
+
+<script>
+document.querySelectorAll(".accordion-header").forEach(btn=>{
+  btn.addEventListener("click",()=>{
+    const content = btn.nextElementSibling;
+    content.style.display =
+      content.style.display === "block" ? "none" : "block";
+  });
+});
+</script>
+
+</body>
+</html>

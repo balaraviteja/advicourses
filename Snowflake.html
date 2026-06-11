@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Snowflake + DBT + ADF Course</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background: linear-gradient(135deg,#020617,#0f172a);
+  color:#fff;
+}
+
+.section{
+  padding:60px 8%;
+}
+
+.hero{
+  text-align:center;
+  padding:100px 20px;
+}
+
+.hero h1{
+  font-size:2.5rem;
+  background: linear-gradient(90deg,#38bdf8,#22c55e);
+  -webkit-background-clip:text;
+  color:transparent;
+}
+
+.hero p{
+  margin-top:10px;
+  opacity:0.8;
+}
+
+.card{
+  background:rgba(255,255,255,0.05);
+  padding:25px;
+  border-radius:20px;
+  margin-top:20px;
+  backdrop-filter:blur(10px);
+}
+
+.old-price{
+  text-decoration:line-through;
+  color:#94a3b8;
+}
+
+.new-price{
+  font-size:2.3rem;
+  color:#22c55e;
+  font-weight:600;
+}
+
+.btn{
+  margin-top:20px;
+  padding:15px;
+  width:100%;
+  border:none;
+  border-radius:12px;
+  background:linear-gradient(135deg,#22c55e,#4ade80);
+  cursor:pointer;
+  font-weight:600;
+}
+
+.btn:hover{transform:scale(1.05);}
+
+.accordion-item{
+  margin-top:10px;
+  border-radius:10px;
+  overflow:hidden;
+}
+
+.accordion-header{
+  width:100%;
+  background:linear-gradient(135deg,#38bdf8,#6366f1);
+  padding:15px;
+  border:none;
+  color:#fff;
+  text-align:left;
+  font-weight:600;
+  cursor:pointer;
+}
+
+.accordion-content{
+  display:none;
+  background:rgba(255,255,255,0.05);
+  padding:15px;
+}
+
+.accordion-content li{
+  margin-bottom:6px;
+}
+
+.terms{
+  font-size:0.85rem;
+  opacity:0.7;
+  margin-top:10px;
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+}
+</style>
+
+<script>
+function payNow(){
+  window.open("https://pages.razorpay.com/pl_SzM9VzGH5khC4B/view","_blank");
+}
+</script>
+
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Master Snowflake + DBT + ADF 🚀</h1>
+  <p>Become a cloud data engineer with real-time pipelines & projects.</p>
+</section>
+
+<!-- COURSE OVERVIEW -->
+<section class="section">
+  <h2>Course Overview</h2>
+
+  <div class="accordion">
+
+    <div class="accordion-item">
+      <button class="accordion-header">Course Highlights ▼</button>
+      <div class="accordion-content">
+        <ul>
+          <li>Real-time task explanation with business use cases</li>
+          <li>Hands-on labs for every topic</li>
+          <li>Live doubt clearing sessions</li>
+          <li>Daily interview preparation questions</li>
+          <li>Resume building support</li>
+          <li>End-to-end real-time project</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">Tools & Delivery ▼</button>
+      <div class="accordion-content">
+        <ul>
+          <li>Oracle DB, SQL Developer</li>
+          <li>Snowflake, DBT Cloud, AWS, Azure</li>
+          <li>Live online sessions (Zoom)</li>
+          <li>Daily PPTs with case studies</li>
+          <li>Unix + Interview support</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">SQL + Snowflake Basics ▼</button>
+      <div class="accordion-content">
+        <ul>
+          <li>RDBMS, Joins, Constraints</li>
+          <li>DDL, DML, TCL</li>
+          <li>Snowflake Architecture</li>
+          <li>Users, Roles, Warehouses</li>
+          <li>Time Travel & Fail Safe</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">Data Engineering in Snowflake ▼</button>
+      <div class="accordion-content">
+        <ul>
+          <li>Data Loading (On-Prem → Cloud)</li>
+          <li>Snowpipe (Real-time ingestion)</li>
+          <li>Streams & Tasks</li>
+          <li>Stages & Storage</li>
+          <li>Data Sharing</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">Advanced Snowflake ▼</button>
+      <div class="accordion-content">
+        <ul>
+          <li>UDFs & Stored Procedures</li>
+          <li>Performance Optimization</li>
+          <li>Clustering & Materialized Views</li>
+          <li>Masking Policies</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">DBT + ADF ▼</button>
+      <div class="accordion-content">
+        <ul>
+          <li>DBT Setup & GitHub Integration</li>
+          <li>Models, Tests, Snapshots</li>
+          <li>ADF Pipelines</li>
+          <li>Azure Blob → Snowflake</li>
+          <li>End-to-End Project</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">Learning Outcomes ▼</button>
+      <div class="accordion-content">
+        <ul>
+          <li>Manage Snowflake environment</li>
+          <li>Build ETL pipelines</li>
+          <li>Work with DBT transformations</li>
+          <li>Automate workflows using ADF</li>
+          <li>Optimize performance & cost</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PRICE -->
+<section class="section">
+  <div class="card" style="text-align:center;">
+    <h2>Snowflake + DBT + ADF Full Course</h2>
+    <h3>🔥 Limited Time Offer</h3>
+
+    <p class="old-price">₹20,000</p>
+    <p class="new-price">₹1,499</p>
+
+    <button class="btn" onclick="payNow()">Enroll Now</button>
+
+    <p class="terms">
+      ✅ Access will be provided within 24 hours of registration
+    </p>
+  </div>
+</section>
+
+<!-- TERMS -->
+<section class="section">
+  <h2>Terms & Conditions</h2>
+  <div class="card">
+    <ul>
+      <li>Course access will be provided within 24 hours.</li>
+      <li>No refunds after payment.</li>
+      <li>Personal use only.</li>
+      <li>Support via WhatsApp group.</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+© 2026 ADVI COURSES
+</footer>
+
+<script>
+document.querySelectorAll(".accordion-header").forEach(btn=>{
+  btn.addEventListener("click",()=>{
+    const content = btn.nextElementSibling;
+    content.style.display =
+      content.style.display === "block" ? "none" : "block";
+  });
+});
+</script>
+
+</body>
+</html>
