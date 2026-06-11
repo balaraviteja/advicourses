@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Snowflake + DBT + ADF Course</title>
+<title>Selenium Automation Course</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
@@ -20,6 +20,10 @@ body{
   color:#fff;
 }
 
+.section{
+  padding:60px 8%;
+}
+
 /* HERO */
 .hero{
   text-align:center;
@@ -27,55 +31,36 @@ body{
 }
 
 .hero h1{
-  font-size:2.7rem;
-  background: linear-gradient(90deg,#22c55e,#38bdf8);
+  font-size:2.5rem;
+  background: linear-gradient(90deg,#38bdf8,#22c55e);
   -webkit-background-clip:text;
   color:transparent;
 }
 
 .hero p{
-  margin-top:15px;
+  margin-top:10px;
   opacity:0.8;
-  max-width:650px;
-  margin-left:auto;
-  margin-right:auto;
-}
-
-/* SECTION */
-.section{
-  padding:70px 8%;
 }
 
 /* CARD */
 .card{
   background:rgba(255,255,255,0.05);
+  padding:25px;
   border-radius:20px;
-  padding:30px;
-  margin-top:25px;
+  margin-top:20px;
   backdrop-filter:blur(10px);
-  border:1px solid rgba(255,255,255,0.05);
 }
 
 /* PRICE */
-.price-box{
-  text-align:center;
-}
-
 .old-price{
   text-decoration:line-through;
   color:#94a3b8;
-  font-size:1.2rem;
 }
 
 .new-price{
-  font-size:2.5rem;
-  font-weight:600;
+  font-size:2.3rem;
   color:#22c55e;
-}
-
-.offer{
-  color:#ef4444;
-  font-size:0.9rem;
+  font-weight:600;
 }
 
 /* BUTTON */
@@ -85,39 +70,53 @@ body{
   width:100%;
   border:none;
   border-radius:12px;
-  background: linear-gradient(135deg,#22c55e,#4ade80);
-  font-weight:600;
+  background:linear-gradient(135deg,#22c55e,#4ade80);
   cursor:pointer;
-  transition:0.3s;
+  font-weight:600;
 }
 
 .btn:hover{
   transform:scale(1.05);
 }
 
-/* LIST */
-ul{
+/* ACCORDION */
+.accordion-item{
   margin-top:10px;
-  padding-left:20px;
+  border-radius:10px;
+  overflow:hidden;
 }
 
-li{
-  margin-bottom:8px;
-  opacity:0.9;
+.accordion-header{
+  width:100%;
+  background:linear-gradient(135deg,#38bdf8,#6366f1);
+  padding:15px;
+  border:none;
+  color:#fff;
+  text-align:left;
+  font-weight:600;
+  cursor:pointer;
+}
+
+.accordion-content{
+  display:none;
+  background:rgba(255,255,255,0.05);
+  padding:15px;
+}
+
+.accordion-content li{
+  margin-bottom:6px;
 }
 
 /* TERMS */
 .terms{
-  margin-top:15px;
   font-size:0.85rem;
   opacity:0.7;
+  margin-top:10px;
 }
 
-/* FOOTER */
 footer{
   text-align:center;
   padding:20px;
-  background:#020617;
 }
 </style>
 
@@ -133,101 +132,152 @@ function payNow(){
 
 <!-- HERO -->
 <section class="hero">
-  <h1>Become a Cloud Data Engineer 🚀</h1>
-  <p>
-    Learn <strong>Snowflake + DBT + ADF</strong> through real-world projects and pipelines.  
-    This course is designed to take you from beginner to job-ready with practical industry skills.
-  </p>
+  <h1>Master Selenium & Automation Testing 🚀</h1>
+  <p>Become job-ready with Manual Testing, Java & Selenium + Real-Time Projects</p>
 </section>
 
-<!-- PRICE SECTION -->
+<!-- PRICE -->
 <section class="section">
-  <div class="card price-box">
-    <h2>🔥 Limited Time Offer</h2>
+  <div class="card" style="text-align:center;">
+    <h2>🔥 Limited Offer</h2>
 
     <p class="old-price">₹20,000</p>
     <p class="new-price">₹1,499</p>
-    <p class="offer">⏳ Offer valid for limited seats</p>
 
     <button class="btn" onclick="payNow()">Enroll Now</button>
 
     <p class="terms">
-      ✅ Course access will be shared within <b>24 hours</b> after successful payment.
+      ✅ Access will be provided within 24 hours of registration
     </p>
   </div>
 </section>
 
-<!-- COURSE OVERVIEW -->
+<!-- COURSE OVERVIEW DROPDOWN -->
 <section class="section">
   <h2>Course Overview</h2>
 
-  <div class="card">
-    <p>
-      This program is built to give you <strong>real industry-level exposure</strong> in Data Engineering.  
-      You will learn how companies build data pipelines, transform raw data into insights,  
-      and deploy scalable solutions using modern cloud tools.
-    </p>
+  <div class="accordion">
 
-    <br>
+    <div class="accordion-item">
+      <button class="accordion-header">Manual Testing ▼</button>
+      <div class="accordion-content">
+        <ul>
+          <li>SDLC Models (Agile, V-model)</li>
+          <li>STLC Phases</li>
+          <li>Test Cases & Scenarios</li>
+          <li>Bug Life Cycle</li>
+          <li>Severity & Priority</li>
+          <li>JIRA & Zephyr</li>
+          <li>Types of Testing (Smoke, Regression, Security)</li>
+        </ul>
+      </div>
+    </div>
 
-    <p>
-      By the end of this course, you will be able to:
-    </p>
+    <div class="accordion-item">
+      <button class="accordion-header">Core Java ▼</button>
+      <div class="accordion-content">
+        <ul>
+          <li>Java Basics & OOPS</li>
+          <li>Data Types, Operators</li>
+          <li>Inheritance & Polymorphism</li>
+          <li>Exception Handling</li>
+          <li>Collections Framework</li>
+        </ul>
+      </div>
+    </div>
 
-    <ul>
-      <li>✔ Design and build data pipelines using Snowflake</li>
-      <li>✔ Transform data using DBT (industry standard tool)</li>
-      <li>✔ Automate workflows using Azure Data Factory</li>
-      <li>✔ Work on real-time project scenarios</li>
-      <li>✔ Crack Data Engineer interviews confidently</li>
-    </ul>
-  </div>
-</section>
+    <div class="accordion-item">
+      <button class="accordion-header">Selenium Automation ▼</button>
+      <div class="accordion-content">
+        <ul>
+          <li>WebDriver & Locators</li>
+          <li>Browser Automation</li>
+          <li>Waits & Synchronization</li>
+          <li>Actions Class</li>
+          <li>JavaScript Executor</li>
+          <li>Real-time Login Automation</li>
+        </ul>
+      </div>
+    </div>
 
-<!-- CURRICULUM -->
-<section class="section">
-  <h2>What You Will Learn</h2>
+    <div class="accordion-item">
+      <button class="accordion-header">TestNG Framework ▼</button>
+      <div class="accordion-content">
+        <ul>
+          <li>Annotations</li>
+          <li>Parallel Testing</li>
+          <li>Data Provider</li>
+          <li>XML Execution</li>
+        </ul>
+      </div>
+    </div>
 
-  <div class="card">
-    <ul>
-      <li>SQL Fundamentals (Joins, Functions, Queries)</li>
-      <li>Snowflake Architecture & Data Warehouse Concepts</li>
-      <li>Data Loading (On-Prem → Cloud & Cloud → Cloud)</li>
-      <li>Snowpipe (Real-time Data Processing)</li>
-      <li>Streams, Tasks & Performance Optimization</li>
-      <li>DBT Setup, Models, Testing & Documentation</li>
-      <li>ADF Pipelines & Azure Integration</li>
-      <li>End-to-End Real-Time Project</li>
-    </ul>
+    <div class="accordion-item">
+      <button class="accordion-header">Tools & Frameworks ▼</button>
+      <div class="accordion-content">
+        <ul>
+          <li>Maven</li>
+          <li>GitHub & Git</li>
+          <li>Jenkins CI/CD</li>
+          <li>Cucumber BDD</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">API Testing ▼</button>
+      <div class="accordion-content">
+        <ul>
+          <li>Postman</li>
+          <li>REST APIs</li>
+          <li>Status Codes</li>
+          <li>Rest Assured</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">Database Testing ▼</button>
+      <div class="accordion-content">
+        <ul>
+          <li>MySQL Setup</li>
+          <li>SQL Queries</li>
+          <li>DB Validation</li>
+          <li>Excel Data Reading</li>
+        </ul>
+      </div>
+    </div>
+
   </div>
 </section>
 
 <!-- TERMS -->
 <section class="section">
   <h2>Terms & Conditions</h2>
-
   <div class="card">
     <ul>
-      <li>Course access will be provided within 24 hours of registration.</li>
+      <li>Course access will be provided within 24 hours.</li>
       <li>No refunds after payment.</li>
-      <li>This course is for personal use only.</li>
-      <li>Account sharing is strictly prohibited.</li>
-      <li>Support is provided via community or WhatsApp group.</li>
+      <li>Personal use only.</li>
+      <li>Support via WhatsApp group.</li>
     </ul>
-  </div>
-</section>
-
-<!-- FINAL CTA -->
-<section class="section">
-  <div class="card price-box">
-    <h2>Start Your Data Engineer Journey Today 🚀</h2>
-    <button class="btn" onclick="payNow()">Enroll Now for ₹1,499</button>
   </div>
 </section>
 
 <footer>
 © 2026 ADVI COURSES
 </footer>
+
+<!-- SCRIPT -->
+<script>
+document.querySelectorAll(".accordion-header").forEach(btn=>{
+  btn.addEventListener("click",()=>{
+    const content = btn.nextElementSibling;
+    content.style.display =
+      content.style.display === "block" ? "none" : "block";
+  });
+});
+</script>
 
 </body>
 </html>
