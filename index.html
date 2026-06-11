@@ -3,199 +3,553 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Snowflake + DBT + ADF Course</title>
+<title>ADVI Courses</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+<i data-lucide="instagram"></i>
+<i data-lucide="youtube"></i>
+<script>
+function payNow(course) {
+
+  const links = {
+    "selenium": "https://rzp.io/rzp/ITHet6Eq",
+    "snowflake": "https://rzp.io/rzp/p91Nza6",
+    "devops": "https://rzp.io/rzp/kYxWTsh",
+    "sql": "https://rzp.io/rzp/OVVozTa"
+  };
+
+  if (links[course]) {
+    window.location.href = links[course];
+  } else {
+    alert("Payment link not found");
+  }
+}
+</script>
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;scroll-behavior:smooth;}
 
 body{
     background: radial-gradient(circle at top,#1e293b,#020617);
     color:#fff;
 }
 
-.section{padding:70px 8%;}
+/* NAVBAR */
+.navbar{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:15px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter: blur(12px);
+    z-index:1000;
+}
 
-h1,h2{margin-bottom:15px;}
+.logo{
+    font-size:1.5rem;
+    font-weight:600;
+    color:#38bdf8;
+}
 
+/* HERO */
 .hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
     text-align:center;
-    padding:100px 20px;
+    padding:0 20px;
 }
 
 .hero h1{
-    font-size:2.5rem;
+    font-size:3rem;
     background: linear-gradient(90deg,#38bdf8,#a78bfa);
     -webkit-background-clip:text;
     color:transparent;
 }
 
-.hero p{opacity:0.8;margin-top:10px;}
+.hero p{
+    margin-top:15px;
+    opacity:0.8;
+    max-width:600px;
+}
 
+.cta{
+    margin-top:25px;
+    padding:14px 32px;
+    background:linear-gradient(135deg,#38bdf8,#6366f1);
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:600;
+    transition:0.3s;
+}
+.cta:hover{transform:scale(1.05);}
+
+/* SECTION */
+.section{padding:80px 8%;}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+/* CARD */
 .card{
     background:rgba(255,255,255,0.05);
-    padding:25px;
+    backdrop-filter: blur(15px);
     border-radius:20px;
-    margin-top:20px;
+    padding:25px;
+    transition:0.3s;
+    position:relative;
+    border:1px solid rgba(255,255,255,0.05);
 }
 
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 40px rgba(56,189,248,0.2);
+}
+
+/* BADGE */
+.badge{
+    position:absolute;
+    top:15px;
+    right:15px;
+    background:#ef4444;
+    padding:5px 10px;
+    border-radius:10px;
+    font-size:0.7rem;
+}
+
+/* PRICE */
 .price{
-    font-size:2rem;
-    color:#22c55e;
+    margin:15px 0;
+    font-size:1.6rem;
+    color:#38bdf8;
 }
 
-.old-price{
-    text-decoration:line-through;
-    color:#aaa;
-    margin-right:10px;
-}
-
+/* BUTTON */
 .btn{
-    padding:14px;
+    padding:12px;
     width:100%;
     border:none;
-    border-radius:10px;
+    border-radius:12px;
     background:linear-gradient(135deg,#22c55e,#4ade80);
-    font-weight:600;
     cursor:pointer;
-    margin-top:15px;
+    font-weight:600;
+    transition:0.3s;
+    margin-top:10px;
 }
-
 .btn:hover{transform:scale(1.05);}
 
-ul{margin-top:10px;padding-left:20px;}
-li{margin-bottom:6px;opacity:0.9;}
-
-.terms{
-    font-size:0.9rem;
-    opacity:0.7;
-    margin-top:15px;
-}
-
-.highlight{
+/* Secondary Button */
+.btn-secondary{
+    background:transparent;
+    border:1px solid #38bdf8;
     color:#38bdf8;
-    font-weight:600;
 }
+
+.muted{opacity:0.7;font-size:0.9rem;margin-top:8px;}
+
+.muted{opacity:0.7;font-size:0.9rem;margin-top:8px;}
+
+/* WHY SECTION */
+.why-section{
+  text-align:center;
+}
+
+.why-title{
+  font-size:2.5rem;
+  font-weight:600;
+  margin-bottom:10px;
+}
+
+.why-subtitle{
+  opacity:0.6;
+  margin-bottom:50px;
+}
+
+/* GRID */
+.why-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:30px;
+}
+
+/* CARD */
+.why-card{
+  background: linear-gradient(145deg,#020617,#0f172a);
+  border-radius:20px;
+  padding:40px 25px;
+  text-align:center;
+  box-shadow:0 10px 30px rgba(0,0,0,0.5);
+  transition:0.3s;
+}
+
+.why-card:hover{
+  transform:translateY(-8px);
+}
+
+/* ICON */
+.why-card .icon{
+  font-size:40px;
+  margin-bottom:20px;
+  color:#38bdf8;
+}
+
+/* TEXT */
+.why-card h3{
+  font-size:1.3rem;
+  margin-bottom:15px;
+}
+
+.why-card p{
+  opacity:0.7;
+  font-size:0.95rem;
+  line-height:1.6;
+}
+
+/* TESTIMONIAL */
+.testimonial{
+    background:rgba(255,255,255,0.05);
+    padding:20px;
+    border-radius:15px;
+    font-size:0.9rem;
+    line-height:1.6;
+}
+
+.testimonial strong{
+    color:#38bdf8;
+}
+
+/* WHATSAPP */
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    padding:15px;
+    border-radius:50%;
+    font-size:20px;
+    text-decoration:none;
+    color:#fff;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#020617;
+}
+
+.social-icons a{
+  margin-left:15px;
+  color:#fff;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  transition:0.3s;
+}
+
+.social-icons a:hover{
+  color:#38bdf8;
+  transform:scale(1.2);
+}
+
+
+.follow-us{
+  margin-top:20px;
+}
+
+.follow-title{
+  margin-bottom:10px;
+  opacity:0.8;
+}
+
+.follow-icons{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+}
+
+.follow-icons a{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  text-decoration:none;
+  color:#fff;
+  font-size:14px;
+  transition:0.3s;
+}
+
+.follow-icons a{
+  background:rgba(255,255,255,0.05);
+  padding:8px 14px;
+  border-radius:30px;
+}
+
+.follow-icons a:hover{
+  transform:scale(1.1);
+}
+
 </style>
-
-<script>
-function payNow() {
-    window.open("https://rzp.io/rzp/p91Nza6", "_blank");
-}
-</script>
-
 </head>
 
 <body>
+<div class="navbar">
+    <div class="logo">ADVI COURSES</div>
+
+<div class="social-icons">
+    
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/adviplanner/" target="_blank" class="insta">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="url(#instaGradient)" stroke-width="2">
+            <defs>
+                <linearGradient id="instaGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#feda75"/>
+                    <stop offset="25%" stop-color="#fa7e1e"/>
+                    <stop offset="50%" stop-color="#d62976"/>
+                    <stop offset="75%" stop-color="#962fbf"/>
+                    <stop offset="100%" stop-color="#4f5bd5"/>
+                </linearGradient>
+            </defs>
+            <rect x="2" y="2" width="20" height="20" rx="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="18" cy="6" r="1"/>
+        </svg>
+    </a>
+
+    <!-- YouTube -->
+    <a href="https://www.youtube.com/@infobuzztechh" target="_blank" class="yt">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#FF0000">
+            <path d="M21.8 8s-.2-1.4-.8-2c-.7-.8-1.5-.8-1.9-.9C16.7 4.8 12 4.8 12 4.8h0s-4.7 0-7.1.3c-.4 0-1.2.1-1.9.9-.6.6-.8 2-.8 2S2 9.7 2 11.4v1.2C2 14.3 2.2 16 2.2 16s.2 1.4.8 2c.7.8 1.6.8 2 .9 1.5.1 6.9.3 6.9.3s4.7 0 7.1-.3c.4 0 1.2-.1 1.9-.9.6-.6.8-2 .8-2s.2-1.7.2-3.4v-1.2C22 9.7 21.8 8 21.8 8zM9.8 14.5v-6l6 3-6 3z"/>
+        </svg>
+    </a>
+    
+    <!-- WhatsApp -->
+    <a href="https://whatsapp.com/channel/0029Vb5qyXe9hXFE73yz723s" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#25D366">
+        <path d="M20.5 3.5A11 11 0 0 0 2.6 17.4L2 22l4.7-1.5A11 11 0 1 0 20.5 3.5zm-8.5 16a9 9 0 0 1-4.6-1.3l-.3-.2-2.8.9.9-2.7-.2-.3A9 9 0 1 1 12 19.5zm5-6.7c-.3-.1-1.6-.8-1.8-.9-.2-.1-.4-.1-.6.1s-.7.9-.9 1.1c-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.6-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.2-.9.9-.9 2.1 0 1.2.9 2.4 1 2.6.1.2 1.8 2.8 4.3 3.9.6.3 1.1.5 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.6-.7 1.8-1.3.2-.6.2-1.1.1-1.2-.1-.1-.3-.2-.6-.3z"/>
+      </svg>
+    </a>
+
+</div>
+</div>
 
 <!-- HERO -->
 <section class="hero">
-    <h1>Become Data Engineer with Snowflake, DBT & ADF 🚀</h1>
-    <p>Master real-time pipelines and land high-paying cloud data jobs.</p>
+    <h1>Become Job-Ready in Tech and Land High-Paying Roles 🚀</h1>
+    <p>Master in-demand skills, crack interviews, and land high-paying jobs with real-world training.</p>
+    <button class="cta" onclick="document.getElementById('courses').scrollIntoView()">Enroll Learning</button>
 </section>
 
-<!-- PRICING -->
+<!-- TRUST -->
 <section class="section">
-    <div class="card">
-        <h2>🔥 Limited Time Offer</h2>
-
-        <div class="price">
-            <span class="old-price">₹20,000</span> ₹1,499
-        </div>
-
-        <p style="color:#ef4444;margin-top:5px;">⏳ Offer valid for limited time</p>
-
-        <button class="btn" onclick="payNow()">Enroll Now</button>
-
-        <p class="terms">
-            ✅ Course access will be provided within <span class="highlight">24 hours</span> of registration.
-        </p>
+    <div class="grid">
+        <div class="card">👨‍🎓 1000+ Students</div>
+        <div class="card">💼 200+ switched their domains</div>
+        <div class="card">⭐ 4.8 Rating</div>
     </div>
 </section>
 
-<!-- CURRICULUM -->
-<section class="section">
-    <h2>Course Curriculum</h2>
+<!-- COURSES -->
+<section id="courses" class="section">
+<h2>Explore Courses</h2><br>
 
-    <div class="card">
-        <h3>Module 1: SQL Basics</h3>
-        <ul>
-            <li>RDBMS Basics, Operators, Joins</li>
-            <li>Group By, Ranking Functions</li>
-            <li>DDL, DML, TCL</li>
-        </ul>
+<div class="grid">
 
-        <h3>Module 2–7: Snowflake Core</h3>
-        <ul>
-            <li>Architecture & Cloud Concepts</li>
-            <li>Users, Roles & Warehouses</li>
-            <li>Time Travel & Fail Safe</li>
-        </ul>
+<div class="card">
+<div class="badge">Best Seller</div>
+<h3>Java Selenium Testing</h3>
+<p>Master automation with frameworks + live projects.</p>
+<div class="muted">✔ Real-time projects<br>✔ Interview prep<br>✔ Resume help</div>
+<div class="price">₹999</div>
+<a href="https://drive.google.com/file/d/1XsaBvPBwZv_pGCdZ8o22ICPYAHEkeQ_h/view?usp=sharing" download>
+  <button class="btn btn-secondary">📥 Download Curriculum</button>
+</a>
+<button class="btn" onclick="payNow('selenium')">Enroll Now</button>
+</div>
 
-        <h3>Module 8–15: Advanced Snowflake</h3>
-        <ul>
-            <li>Zero Copy Cloning</li>
-            <li>Data Loading & Snowpipe</li>
-            <li>Streams, Tasks, Sharing</li>
-        </ul>
+<div class="card">
+<div class="badge">Hot</div>
+<h3>Snowflake + DBT + ADF</h3>
+<p>Become a cloud data engineer with real pipelines.</p>
+<div class="muted">✔ ETL pipelines<br>✔ Cloud tools<br>✔ Job-ready skills</div>
+<div class="price">₹1499</div>
+<a href="https://drive.google.com/file/d/1L0RNkNYKXcw9qb0raBYBL31jK_kN3jAf/view?usp=sharing" download>
+  <button class="btn btn-secondary">📥 Download Curriculum</button>
+</a>
+<button class="btn" onclick="payNow('snowflake')">Enroll Now</button>
+</div>
 
-        <h3>Module 16–19: Advanced Features</h3>
-        <ul>
-            <li>UDFs & Stored Procedures</li>
-            <li>Performance Tuning</li>
-            <li>Masking Policies</li>
-        </ul>
+<div class="card">
+<h3>DevOps with AWS</h3>
+<p>CI/CD, Docker, Kubernetes & AWS deployment.</p>
+<div class="muted">✔ CI/CD pipelines<br>✔ Docker + K8s<br>✔ AWS deploy</div>
+<div class="price">₹799</div>
+<a href="https://drive.google.com/file/d/1oCh7GBJeisS6oeaTjufRuiFPkpr8EfB1/view?usp=sharing" download>
+  <button class="btn btn-secondary">📥 Download Curriculum</button>
+</a>
+<button class="btn" onclick="payNow('devops')">Enroll Now</button>
+</div>
 
-        <h3>DBT Modules</h3>
-        <ul>
-            <li>DBT Setup & GitHub Integration</li>
-            <li>Models, Tests, Snapshots</li>
-            <li>Macros & Documentation</li>
-        </ul>
+<div class="card">
+<h3>SQL Course</h3>
+<p>Master SQL for interviews & real projects.</p>
+<div class="muted">✔ Queries<br>✔ Joins<br>✔ Real datasets</div>
+<div class="price">₹299</div>
+<a href="https://drive.google.com/file/d/17_zrzX_w3AXxupA-obSJBpXtacvR-1HA/view?usp=sharing" download>
+  <button class="btn btn-secondary">📥 Download Curriculum</button>
+</a>
+<button class="btn" onclick="payNow('sql')">Enroll Now</button>
+</div>
 
-        <h3>ADF + Project</h3>
-        <ul>
-            <li>ADF Pipelines</li>
-            <li>Azure Blob → Snowflake</li>
-            <li>End-to-End Real-Time Project</li>
-        </ul>
-    </div>
+</div>
 </section>
 
-<!-- HIGHLIGHTS -->
-<section class="section">
-    <h2>Course Highlights</h2>
+<!-- WHY LEARN SECTION -->
+<section class="section why-section">
+  <h2 class="why-title">Why learn with our courses?</h2>
+  <p class="why-subtitle">The benefits of learning with Our Courses</p>
 
-    <div class="card">
-        <ul>
-            <li>✔ Real-time project implementation</li>
-            <li>✔ Hands-on labs for every topic</li>
-            <li>✔ Daily interview questions</li>
-            <li>✔ Resume building support</li>
-            <li>✔ Live doubt sessions</li>
-        </ul>
+  <div class="why-grid">
+
+    <div class="why-card">
+      <div class="icon">📈</div>
+      <h3>Career growth</h3>
+      <p>
+        Gain the skills and knowledge needed to excel in your career and unlock new opportunities.
+      </p>
     </div>
+
+    <div class="why-card">
+      <div class="icon">💻</div>
+      <h3>Learn from Experts</h3>
+      <p>
+        Learn from industry experts who provide valuable insights and practical knowledge.
+      </p>
+    </div>
+
+    <div class="why-card">
+      <div class="icon">🎓</div>
+      <h3>Graduate with confidence</h3>
+      <p>
+        Graduate from our courses with confidence, equipped with the necessary skills to succeed in your chosen field.
+      </p>
+    </div>
+
+  </div>
 </section>
 
-<!-- TERMS -->
+<!-- COURSE ACCESS -->
 <section class="section">
-    <h2>Terms & Conditions</h2>
-
-    <div class="card">
-        <ul>
-            <li>Course access will be shared within 24 hours after payment.</li>
-            <li>Fees once paid are non-refundable.</li>
-            <li>Content is for personal use only.</li>
-            <li>Sharing login details is strictly prohibited.</li>
-            <li>Support is provided via community/group.</li>
-        </ul>
-    </div>
+<h2>Course Access & Support</h2><br>
+<div class="grid">
+<div class="card">🎥 <strong>Recorded Sessions</strong><p class="muted">Instant access after enrollment.</p></div>
+<div class="card">🔄 <strong>Regular Updates</strong><p class="muted">New sessions added frequently.</p></div>
+<div class="card">💬 <strong>Q&A Support</strong><p class="muted">Dedicated support for doubts.</p></div>
+</div>
 </section>
 
-<footer style="text-align:center;padding:20px;background:#020617;">
-© 2026 ADVI COURSES
-</footer>
+<!-- IMPROVED TESTIMONIALS -->
+<section class="section">
+<h2>Success Stories</h2><br>
 
+<div class="grid">
+
+<div class="testimonial">
+<strong>Arjun – Manual Tester → Automation Engineer</strong><br><br>
+I had 2 years of manual testing experience but was stuck with low growth.  
+After completing the Java Selenium course, I built real projects and gained confidence.  
+Within 2 months, I switched to an automation role with a 60% salary hike.
+</div>
+
+<div class="testimonial">
+<strong>Priya – Fresher → Data Engineer</strong><br><br>
+I had no real-world experience in data engineering.  
+The Snowflake + DBT + ADF course helped me understand pipelines practically.  
+I cleared interviews and landed my first job in just 3 months.
+</div>
+
+<div class="testimonial">
+<strong>Rahul – Support Engineer → DevOps Engineer</strong><br><br>
+I wanted to move into DevOps but didn’t know where to Enroll.  
+The course gave me hands-on experience with Docker, Kubernetes, and AWS.  
+I transitioned into a DevOps role with better pay and responsibilities.
+</div>
+
+</div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+<h2>FAQs</h2>
+<div class="card">Access within 2 hours after payment.</div><br>
+<div class="card">Beginner friendly courses.</div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" style="text-align:center;">
+<h2>Contact</h2>
+<p>Email: adviplanner@gmail.com</p>
+</section>
+
+<div class="follow-us" style="text-align:center;">
+  <p class="follow-title">Follow us on</p>
+
+  <div class="follow-icons">
+    
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/adviplanner/" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="url(#instaGrad)" stroke-width="2">
+        <defs>
+          <linearGradient id="instaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#feda75"/>
+            <stop offset="25%" stop-color="#fa7e1e"/>
+            <stop offset="50%" stop-color="#d62976"/>
+            <stop offset="75%" stop-color="#962fbf"/>
+            <stop offset="100%" stop-color="#4f5bd5"/>
+          </linearGradient>
+        </defs>
+        <rect x="2" y="2" width="20" height="20" rx="5"/>
+        <circle cx="12" cy="12" r="4"/>
+        <circle cx="18" cy="6" r="1"/>
+      </svg>
+      Instagram
+    </a>
+
+    <!-- YouTube -->
+    <a href="https://www.youtube.com/@infobuzztechh" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#FF0000">
+        <path d="M21.8 8s-.2-1.4-.8-2c-.7-.8-1.5-.8-1.9-.9C16.7 4.8 12 4.8 12 4.8h0s-4.7 0-7.1.3c-.4 0-1.2.1-1.9.9-.6.6-.8 2-.8 2S2 9.7 2 11.4v1.2C2 14.3 2.2 16 2.2 16s.2 1.4.8 2c.7.8 1.6.8 2 .9 1.5.1 6.9.3 6.9.3s4.7 0 7.1-.3c.4 0 1.2-.1 1.9-.9.6-.6.8-2 .8-2s.2-1.7.2-3.4v-1.2C22 9.7 21.8 8 21.8 8zM9.8 14.5v-6l6 3-6 3z"/>
+      </svg>
+      YouTube
+    </a>
+    
+    
+        <!-- WhatsApp -->
+    <a href="https://whatsapp.com/channel/0029Vb5qyXe9hXFE73yz723s" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#25D366">
+        <path d="M20.5 3.5A11 11 0 0 0 2.6 17.4L2 22l4.7-1.5A11 11 0 1 0 20.5 3.5zm-8.5 16a9 9 0 0 1-4.6-1.3l-.3-.2-2.8.9.9-2.7-.2-.3A9 9 0 1 1 12 19.5zm5-6.7c-.3-.1-1.6-.8-1.8-.9-.2-.1-.4-.1-.6.1s-.7.9-.9 1.1c-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.6-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.2-.9.9-.9 2.1 0 1.2.9 2.4 1 2.6.1.2 1.8 2.8 4.3 3.9.6.3 1.1.5 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.6-.7 1.8-1.3.2-.6.2-1.1.1-1.2-.1-.1-.3-.2-.6-.3z"/>
+      </svg>
+      WhatsApp
+    </a>
+
+  </div>
+</div>
+
+<footer>© 2026 ADVI COURSES</footer>
+
+<a href="https://forms.gle/FvEVduHHctRyG3Hk8" class="whatsapp">💬</a>
+
+<script>
+lucide.createIcons();
+</script>
 </body>
 </html>
