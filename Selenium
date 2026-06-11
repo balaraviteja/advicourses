@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snowflake + DBT + ADF Course</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f7fa;
+      line-height: 1.6;
+    }
+    header {
+      background: #0c4b8e;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    section {
+      padding: 20px 40px;
+      margin: 15px auto;
+      background: white;
+      max-width: 1100px;
+      border-radius: 8px;
+    }
+    h2 {
+      color: #0c4b8e;
+    }
+    ul {
+      margin-left: 20px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0c4b8e;
+      color: white;
+    }
+    a {
+      color: #0c4b8e;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Snowflake + DBT + ADF Complete Course</h1>
+  <p>Industry-Focused Data Engineering Program with Real-Time Projects</p>
+</header>
+
+<section>
+  <h2>📘 Course Overview</h2>
+  <p>
+    This course provides a comprehensive learning experience covering modern data engineering tools, including 
+    <strong>Snowflake, DBT (Data Build Tool), and Azure Data Factory (ADF)</strong>. 
+    Designed for real-world application, the course includes hands-on labs, live sessions, and an end-to-end project.
+  </p>
+</section>
+
+<section>
+  <h2>✨ Course Highlights</h2>
+  <ul>
+    <li>Real-time business use case explanations</li>
+    <li>Hands-on labs for every major topic</li>
+    <li>Daily interview questions and preparation</li>
+    <li>Live interactive Q&A sessions</li>
+    <li>Resume building support</li>
+    <li>End-to-end real-time project</li>
+  </ul>
+</section>
+
+<section>
+  <h2>🧰 Tools & Technologies</h2>
+  <ul>
+    <li><a href="https://www.snowflake.com/" target="_blank">Snowflake</a></li>
+    <li><a href="https://www.getdbt.com/" target="_blank">DBT Cloud</a></li>
+    <li><a href="https://azure.microsoft.com/en-us/products/data-factory/" target="_blank">Azure Data Factory</a></li>
+    <li><a href="https://aws.amazon.com/" target="_blank">AWS</a></li>
+    <li>Oracle SQL Developer</li>
+  </ul>
+</section>
+
+<section>
+  <h2>📚 Course Modules</h2>
+
+  <div class="grid">
+
+    <div>
+      <h3>🗄️ Module 1: Oracle SQL Basics</h3>
+      <p>Learn RDBMS fundamentals, joins, constraints, group functions, ranking functions, and SQL commands.</p>
+    </div>
+
+    <div>
+      <h3>❄️ Module 2–6: Snowflake Core</h3>
+      <p>Explore architecture, roles/users, warehouses, database objects, and storage concepts.</p>
+    </div>
+
+    <div>
+      <h3>⏳ Module 7–8: Time Travel & Cloning</h3>
+      <p>Understand data recovery using Time Travel and Zero Copy Cloning techniques.</p>
+    </div>
+
+    <div>
+      <h3>📥 Module 9–13: Data Loading</h3>
+      <p>Load structured and semi-structured data using Snowpipe, AWS, and staging methods.</p>
+    </div>
+
+    <div>
+      <h3>⚙️ Module 14–18: Advanced Snowflake</h3>
+      <p>Learn streams, SCDs, performance tuning, masking policies, and advanced functions.</p>
+    </div>
+
+    <div>
+      <h3>🔄 Module 20–26: DBT</h3>
+      <p>Build transformations, models, testing, macros, snapshots, and GitHub integration.</p>
+    </div>
+
+    <div>
+      <h3>☁️ Module 27: Azure Data Factory</h3>
+      <p>Create pipelines to load data from Azure Blob Storage into Snowflake.</p>
+    </div>
+
+    <div>
+      <h3>🚀 Module 28: Real-Time Project</h3>
+      <p>Develop a full end-to-end data pipeline using Snowflake, DBT, and ADF.</p>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>🎯 Learning Outcomes</h2>
+  <ul>
+    <li>Configure and manage Snowflake environments</li>
+    <li>Load structured and semi-structured data</li>
+    <li>Implement CDC using Streams and Tasks</li>
+    <li>Build DBT pipelines with testing</li>
+    <li>Create ADF pipelines for cloud data movement</li>
+    <li>Perform performance tuning and cost optimization</li>
+  </ul>
+</section>
+
+<section>
+  <h2>🔗 Useful Resources</h2>
+  <ul>
+    <li><a href="https://docs.snowflake.com/" target="_blank">Snowflake Documentation</a></li>
+    <li><a href="https://docs.getdbt.com/" target="_blank">DBT Documentation</a></li>
+    <li><a href="https://learn.microsoft.com/en-us/azure/data-factory/" target="_blank">ADF Learning</a></li>
+  </ul>
+</section>
+
+<footer>
+  <p>© 2026 Advice Courses | Data Engineering Learning Hub</p>
+</footer>
+
+</body>
+</html>
